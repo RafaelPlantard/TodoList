@@ -6,12 +6,12 @@
 //
 
 final class TaskController {
-    private let tasks: TaskDataSource
-    private let users: UserDataSource
+    private let tasks: ModelDataSource<Task>
+    private let users: ModelDataSource<User>
 
     // MARK: Initializer
 
-    init(tasks: TaskDataSource, users: UserDataSource) {
+    init(tasks: ModelDataSource<Task>, users: ModelDataSource<User>) {
         self.tasks = tasks
         self.users = users
     }

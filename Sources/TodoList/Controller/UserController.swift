@@ -6,11 +6,11 @@
 //
 
 final class UserController {
-    private let users: UserDataSource
+    private let users: ModelDataSource<User>
 
     // MARK: Initializer
 
-    init(users: UserDataSource) {
+    init(users: ModelDataSource<User>) {
         self.users = users
     }
 
