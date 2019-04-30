@@ -12,6 +12,8 @@ class Model {
     let name: String
     let creationDate: Date
 
+    // MARK: Initializer
+
     init(id: Int, name: String) {
         self.id = id
         self.name = name
